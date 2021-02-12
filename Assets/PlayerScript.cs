@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour {
 		{
 			if (IsGrounded())
 			{
-				float jumpVelocity = 8f;
+				float jumpVelocity = 7f;
 				rigidbody2d.velocity = Vector2.up * jumpVelocity;
 			}
 			anim.Play("Jump");
