@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour {
 		{
 			if (IsGrounded())
 			{
-				float jumpVelocity = 10f;
+				float jumpVelocity = 8f;
 				rigidbody2d.velocity = Vector2.up * jumpVelocity;
 			}
 			anim.Play("Jump");
@@ -49,7 +49,7 @@ public class PlayerScript : MonoBehaviour {
 	private void Movement()
 	{
 		float movespeed = 5f;
-		if (Input.GetKey(KeyCode.X))
+		if (Input.GetKey(KeyCode.Mouse0))
 		{
 			anim.Play("Attack");
 		}
